@@ -1,2 +1,9 @@
-markdown: rdiscount
+# encoding: utf-8
+
+safe: true
+lsi: false
 pygments: true
+
+markdown: rdiscount
+
+exclude: ['asset']

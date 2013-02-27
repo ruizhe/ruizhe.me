@@ -1,0 +1,66 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font: small/1 "宋体", serif;
+    background: #fff;
+    color: #000;
+}
+
+.wrapper {
+    width:800px;
+    margin: 0 auto;
+}
+
+.header {
+    padding:5px;
+    margin: 20px auto;
+    border: 1px;
+    border-style:solid;
+    border-color:#ccc;
+}
+
+.header h1 {
+}
+
+.header h2 {
+    text-align:right;
+}
+
+.nav li {
+    display: inline;
+}
+
+.main {
+    padding:5px;
+    border:1px;
+    border-style:solid;
+    border-color:#ccc;
+}
+
+.main {
+    
+}
+
+.footer {
+    padding:5px;
+    border:1px;
+    margin: 20px auto;
+    text-align: center;
+    border-style:solid;
+    border-color:#ccc;
+}
+
+.post_entries li {
+    list-style:none outside;
+}
+
+.entry_header:before {
+    content: "[";
+}
+
+.entry_header:after {
+    content: "]";
+}

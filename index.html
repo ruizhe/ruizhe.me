@@ -3,11 +3,16 @@ layout: default
 title: 俺的勃劳格
 ---
 
-<h2>{{ page.title }}</h2>
-<p>最新文章</p>
-
-<ul>
+<div class="post_entries">
   {% for post in site.posts %}
+  <div class="post_entry">
+    <div class="post_header">
+      <span class="post_title">
+	<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </span>
+      <span class="post_date">{{ post.date | date_to_string }}</span>
+    </div>
+  </div>
      <li>{{ post.date | date_to_string }}<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
-</ul>
+</div>

@@ -4,7 +4,8 @@
 }
 
 body {
-    font: large/1.5 "宋体", serif;
+    font-family: "宋体";
+/*    font: large/1.5 "", serif; */
     background: #fff;
     color: #000;
 }
@@ -34,14 +35,40 @@ body {
 }
 
 .main {
-    padding:5px;
+    padding:1em;
     border:1px;
     border-style:solid;
     border-color:#ccc;
+    line-height:2em;
 }
 
-.main {
-    
+.main .title {
+    margin-top: 0.5em;
+    padding-bottom:0.5em;
+    border-bottom:2px solid #999;
+    margin-bottom:1em;
+}
+
+.main .title .text {
+    font-size:180%;
+}
+
+.main .title .date {
+    float:right;
+    text-align:right;
+}
+
+.main h1 {
+    font-size:150%;
+}
+
+.main h2 {
+    font-size:120%;
+}
+
+.main p {
+    line-height:1.5em;
+    margin:1em 0 1em 0;
 }
 
 .footer {
@@ -63,4 +90,14 @@ body {
 
 .entry_header:after {
     content: "]";
+}
+
+ul {
+    list-style-type:circle;
+    list-style-position:inside;
+}
+
+ol {
+    list-style-type:decimal;
+    list-style-position:inside;
 }

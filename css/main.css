@@ -67,6 +67,7 @@ body {
 }
 
 .main p {
+    text-indent:2em;
     line-height:1.5em;
     margin:1em 0 1em 0;
 }
@@ -100,4 +101,16 @@ ul {
 ol {
     list-style-type:decimal;
     list-style-position:inside;
+}
+
+pre {
+    font-size:100%;
+    vertical-align:baseline;
+    line-height:1em;
+    background-color:#000;
+    color:#0F0;
+    margin:0;
+    padding:0;
+    border:0;
+font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
 }

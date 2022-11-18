@@ -1,0 +1,60 @@
+baseURL: 'ruizhe.me'
+languageCode: 'zh-cn'
+title: 'My Hugo Blog'
+theme: "hugo-theme-stack"
+
+
+params:
+  mainSections:
+    - posts
+  dateFormat:
+    published: Jan 02, 2006
+    lastUpdated: Jan 02, 2006 15:04 MST
+  footer:
+    since: 2020
+    customText:
+  sidebar:
+    subtitle: "subtitle"
+    emoji: 🍥
+    avatar:
+        enabled: true
+        local: true
+        src: img/avatar.png
+  article:
+    math: false
+    toc: true
+    readingTime: true
+    license:
+      enabled: true
+      default: Licensed under CC BY-NC-SA 4.0
+
+  widgets:
+  #   homepage:
+  #     - type: search
+  #     - type: archives
+  #       params:
+  #       limit: 5
+  #     - type: categories
+  #       params:
+  #         limit: 10
+  #     - type: tag-cloud
+  #       params:
+  #         limit: 10
+    page:
+      - type: toc
+
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 10
+      identifier: "home"
+      params:
+        icon: home
+        newTab: false
+  social:
+    - identifier: github
+      name: GitHub
+      url: https://github.com/ruizhe
+      params:
+        icon: brand-github
